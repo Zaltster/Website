@@ -12,12 +12,27 @@ const projects = [
         github: "https://github.com/Zaltster/FetchAssessment"
     },
     // Add more projects here...
+    {
+        title: "Recipt Prediction Model",
+        description: "Web app for visualizing future amount of Reciepts. Simply your previous 3 months worth of sales and the model will predict the next month's Sales. Custom CSV uploads are available through the Code.",
+        video: "https://www.loom.com/embed/cfe3a31974b74efbb44cb5f19504d38e",
+        technologies: ["Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib"],
+        github: "https://github.com/Zaltster/FetchAssessment"
+    },
 ];
 
 export default function MLProjects() {
     return (
         <div className="min-h-screen bg-[#010b26] text-white p-8">
-            <h1 className="text-5xl font-bold mb-12">ML Projects</h1>
+            <nav className="flex justify-between items-center mb-12">
+                <Link href="/" className="text-xl hover:text-blue-400 transition-colors border border-white rounded-md px-3 py-1">
+                    Home Page ↗
+                </Link>
+                <h1 className="text-5xl font-bold">ML Projects</h1>
+                <Link href="/SoftwareProjects" className="text-xl hover:text-blue-400 transition-colors border border-white rounded-md px-3 py-1">
+                    Software Projects ↗
+                </Link>
+            </nav>
             <div className="space-y-24">
                 {projects.map((project, index) => (
                     <div key={index} className="flex flex-col md:flex-row gap-8">
