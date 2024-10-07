@@ -11,7 +11,14 @@ const projects = [
         technologies: ["Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib"],
         github: "https://github.com/Zaltster/FetchAssessment"
     },
-    // Add more software projects here...
+    // Add more projects here...
+    {
+        title: "Recipt Prediction Model",
+        description: "Web app for visualizing future amount of Reciepts. Simply your previous 3 months worth of sales and the model will predict the next month's Sales. Custom CSV uploads are available through the Code.",
+        video: "https://www.loom.com/embed/cfe3a31974b74efbb44cb5f19504d38e",
+        technologies: ["Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib"],
+        github: "https://github.com/Zaltster/FetchAssessment"
+    },
 ];
 
 export default function SoftwareProjects() {
@@ -37,14 +44,14 @@ export default function SoftwareProjects() {
                                 className="w-full h-full"
                             ></iframe>
                         </div>
-                        <div className="w-full md:w-1/2 flex flex-col justify-center">
+                        <div className="w-full md:w-1/3 flex flex-col justify-center">
                             <Link href={project.github} target="_blank" rel="noopener noreferrer" className="text-3xl font-semibold mb-3 hover:text-blue-400 transition-colors">
                                 {project.title} ↗
                             </Link>
-                            <p className="text-gray-300 mb-4 mt-2 text-base leading-relaxed">{project.description}</p>
-                            <div className="flex flex-wrap gap-2 mb-4">
+                            <p className="text-gray-300 mb-4 text-lg leading-relaxed">{project.description}</p>
+                            <div className="flex flex-wrap gap-2 mb-2">
                                 {project.technologies.map((tech, techIndex) => (
-                                    <span key={techIndex} className="bg-[#1e3a5f] text-[#8fbbe9] text-sm rounded-full px-3 py-1">
+                                    <span key={techIndex} className="bg-[#1e3a5f] text-[#8fbbe9] text-base rounded-full px-3 py-1">
                                         {tech}
                                     </span>
                                 ))}

@@ -44,14 +44,14 @@ export default function MLProjects() {
                                 className="w-full h-full"
                             ></iframe>
                         </div>
-                        <div className="w-full md:w-1/2 flex flex-col justify-center">
+                        <div className="w-full md:w-1/3 flex flex-col justify-center">
                             <Link href={project.github} target="_blank" rel="noopener noreferrer" className="text-3xl font-semibold mb-3 hover:text-blue-400 transition-colors">
                                 {project.title} ↗
                             </Link>
-                            <p className="text-gray-300 mb-4 mt-2 text-base leading-relaxed">{project.description}</p>
-                            <div className="flex flex-wrap gap-2 mb-4">
+                            <p className="text-gray-300 mb-4 text-lg leading-relaxed">{project.description}</p>
+                            <div className="flex flex-wrap gap-2 mb-2">
                                 {project.technologies.map((tech, techIndex) => (
-                                    <span key={techIndex} className="bg-[#1e3a5f] text-[#8fbbe9] text-sm rounded-full px-3 py-1">
+                                    <span key={techIndex} className="bg-[#1e3a5f] text-[#8fbbe9] text-base rounded-full px-3 py-1">
                                         {tech}
                                     </span>
                                 ))}

@@ -2,6 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import pointerImage from '../images/pointer.png';
+
 
 export default function AnimatedContent() {
     const [showName, setShowName] = useState(false);
