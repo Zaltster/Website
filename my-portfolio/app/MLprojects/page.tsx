@@ -15,7 +15,15 @@ const projects = [
     {
         title: "Recipt Prediction Model",
         description: "Web app for visualizing future amount of Reciepts. Simply your previous 3 months worth of sales and the model will predict the next month's Sales. Custom CSV uploads are available through the Code.",
-        video: "https://www.loom.com/embed/cfe3a31974b74efbb44cb5f19504d38e",
+        video: "https://www.loom.com/embed/98ba00a0a1134d53b3db2ef37797e6b4?sid=9db95e09-5042-4981-b737-6d8f19d1bed3",
+        technologies: ["Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib"],
+        github: "https://github.com/Zaltster/FetchAssessment"
+    },
+
+    {
+        title: "Recipt Prediction Model",
+        description: "Web app for visualizing future amount of Reciepts. Simply your previous 3 months worth of sales and the model will predict the next month's Sales. Custom CSV uploads are available through the Code.",
+        video: "https://www.loom.com/embed/98ba00a0a1134d53b3db2ef37797e6b4?sid=6db0d250-9cee-44b6-8206-fc8994ed9237",
         technologies: ["Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib"],
         github: "https://github.com/Zaltster/FetchAssessment"
     },
