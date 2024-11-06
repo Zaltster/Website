@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import demoGif from '../images/me3.gif'; // Replace with your actual GIF filename
 
 export default function AnimatedContent() {
     const [showName, setShowName] = useState(false);
     const [showTitle, setShowTitle] = useState(false);
     const [showRest, setShowRest] = useState(false);
     const [showPopup, setShowPopup] = useState(false);
-
-    const mlVideo = "https://www.loom.com/embed/cfe3a31974b74efbb44cb5f19504d38e";
 
     useEffect(() => {
         const nameTimer = setTimeout(() => setShowName(true), 100);
@@ -51,7 +51,7 @@ export default function AnimatedContent() {
                 </div>
             )}
 
-            <div className="text-white mb-48 text-center">
+            <div className="text-white mb-32 text-center">
                 <h1 className={`text-7xl mb-4 transition-opacity duration-500 ${showName ? 'opacity-100' : 'opacity-0'}`}>
                     Hi, my name is <span className="font-bold">Sam</span>.
                 </h1>
@@ -60,21 +60,20 @@ export default function AnimatedContent() {
                 </p>
             </div>
 
-            <div className={`flex flex-wrap gap-12 mt-24 justify-center transition-opacity duration-500 ${showRest ? 'opacity-100' : 'opacity-0'}`}>
-                <div className="flex gap-12">
-                    <Link href="/MLprojects" className="bg-white bg-opacity-10 hover:bg-opacity-20 text-white rounded-lg p-12 transition duration-300 w-80 h-60 flex flex-col justify-center items-center text-center">
-                        <h2 className="text-4xl font-semibold mb-4">ML Projects</h2>
-                        <p className="text-xl">Explore my machine learning work</p>
-                    </Link>
+            <div className={`flex flex-wrap gap-12 mt-12 justify-center items-end transition-opacity duration-500 ${showRest ? 'opacity-100' : 'opacity-0'}`}>
+                <Link href="/MLprojects" className="bg-white bg-opacity-10 hover:bg-opacity-20 text-white rounded-lg p-12 transition duration-300 w-80 h-60 flex flex-col justify-center items-center text-center">
+                    <h2 className="text-4xl font-semibold mb-4">ML Projects</h2>
+                    <p className="text-xl">Explore my machine learning work</p>
+                </Link>
 
-                    <div className="bg-white bg-opacity-10 rounded-lg w-[600px] aspect-video">
-                        <iframe
-                            src={mlVideo}
-                            frameBorder="0"
-                            allowFullScreen
-                            className="w-full h-full rounded-lg"
-                        ></iframe>
-                    </div>
+                <div className="bg-transparent rounded-lg w-[600px] aspect-video">
+                    <Image
+                        src={demoGif}
+                        alt="ML Project Demo"
+                        priority
+                        className="w-full h-full object-cover rounded-lg mix-blend-screen"
+                        unoptimized
+                    />
                 </div>
 
                 <Link href="/SoftwareProjects" className="bg-white bg-opacity-10 hover:bg-opacity-20 text-white rounded-lg p-12 transition duration-300 w-80 h-60 flex flex-col justify-center items-center text-center">
