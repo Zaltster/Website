@@ -5,27 +5,27 @@ import Link from 'next/link';
 
 const projects = [
     {
-        title: "Recipt Prediction Model",
-        description: "Web app for visualizing future amount of Reciepts. Simply your previous 3 months worth of sales and the model will predict the next month's Sales. Custom CSV uploads are available through the Code.",
+        title: "Receipt Prediction Model",
+        description: "Demo video on how to use docker to run my Receipt Prediction Model. I used a flask app for visualizing the future amount of receipts. Incorporated a Long Short Term Memory (LSTM) model to predict the next month's sales based on the previous 3 months of sales data.",
         video: "https://www.loom.com/embed/cfe3a31974b74efbb44cb5f19504d38e",
-        technologies: ["Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib"],
+        technologies: ["Python", "Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib", "Docker"],
         github: "https://github.com/Zaltster/FetchAssessment"
     },
-    // Add more projects here...
+    // Add more projects here...    
     {
-        title: "Recipt Prediction Model",
-        description: "Web app for visualizing future amount of Reciepts. Simply your previous 3 months worth of sales and the model will predict the next month's Sales. Custom CSV uploads are available through the Code.",
+        title: "Distance Detection Application",
+        description: "Application that enables the user to upload an image and detect the distance between objects in the image. The application uses Segment Anything Model 2 (SAM2) to segment the objects in the image. The distance between the objects is calculated using the pixel size of the objects and the focal length of the camera.",
         video: "https://www.loom.com/embed/98ba00a0a1134d53b3db2ef37797e6b4?sid=9db95e09-5042-4981-b737-6d8f19d1bed3",
-        technologies: ["Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib"],
-        github: "https://github.com/Zaltster/FetchAssessment"
+        technologies: ["Python", "Flask", "SAM2", "OpenCV", "Numpy", "HTML"],
+        github: "https://github.com/Zaltster/Distance"
     },
 
     {
-        title: "Recipt Prediction Model",
-        description: "Web app for visualizing future amount of Reciepts. Simply your previous 3 months worth of sales and the model will predict the next month's Sales. Custom CSV uploads are available through the Code.",
+        title: "Object Detection Hackathon - Northrup Grumman 3rd Place",
+        description: "Developed an object Detection model that uses Roboflow to annotate all images using SAM2. The model was trained using the YOLOv8 model on the cloud and achieved an mAP of 98% and an f1 score of 91.9%. The PowerPoint is for our hackathon presentation can be found on my linkedin. ",
         video: "https://www.loom.com/embed/98ba00a0a1134d53b3db2ef37797e6b4?sid=6db0d250-9cee-44b6-8206-fc8994ed9237",
-        technologies: ["Pytorch", "Flask", "Pandas", "Numpy", "Matplotlib"],
-        github: "https://github.com/Zaltster/FetchAssessment"
+        technologies: ["Python", "Yolov8", "Roboflow", "SAM2"],
+        github: "https://github.com/Zaltster/NGHackacthon"
     },
 ];
 
