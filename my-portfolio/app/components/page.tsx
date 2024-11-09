@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import demoGif from '../images/me3.gif'; // Replace with your actual GIF filename
-import { Analytics } from "@vercel/analytics/react"
 
 export default function AnimatedContent() {
     const [showName, setShowName] = useState(false);
